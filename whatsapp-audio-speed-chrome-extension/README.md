@@ -1,6 +1,6 @@
 # ✨ WhatsApp Audio Speed Controller
 
-<div style="text-align:center"><img src="./cover.png" width="600" alt="WhatsApp Screenshot" /></div>
+<div align="center"><img src="./cover.png" width="800" alt="WhatsApp Screenshot" style="margin: 0 auto"/></div>
 
 WhatsApp Audio Speed Controller allows you to controll the speed of audio messages. 
 
