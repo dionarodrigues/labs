@@ -2,7 +2,7 @@
 
 <div align="center"><img src="./cover.png" width="800" alt="WhatsApp Screenshot" style="margin: 0 auto"/></div>
 
-WhatsApp Audio Speed Controller allows you to controll the speed of audio messages. 
+[WhatsApp Audio Speed Controller](https://chrome.google.com/webstore/detail/njohepideanemcnockcgoibamcdmdodh/publish-accepted?authuser=2&hl=pt-BR) allows you to controll the speed of audio messages. 
 
 - You have 5 speed options to choose from: normal, 1.25x, 1.5x, 1.75x and 2x.
 - Speed remains applied when you change the conversation user.
