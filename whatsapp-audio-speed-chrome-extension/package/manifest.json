@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "WhatsApp Audio Speed Controller",
+  "description": "Audio speed controller adjusts playback speed for Whatsapp for web messages. Don't waste your time with long audio messages.",
+  "version": "1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
