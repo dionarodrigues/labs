@@ -1,6 +1,6 @@
 # 🌞🌚🌈 Weather App with JavaScript and HTML
 
-<img src="_screenshot/weather-app-screenshot.png" width="250" alt="Animated Circle Text" style="width:100%"/>
+<img src="_screenshot/weather-app-screenshot.png" alt="Animated Circle Text" style="width:100%"/>
 
 ---
 
