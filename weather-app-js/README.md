@@ -1,5 +1,7 @@
 # 🌞🌚🌈 Weather App with JavaScript and HTML
 
+[Demo on Codepen](https://codepen.io/diogorodrigues/pen/qBboqdq)
+
 <img src="_screenshot/weather-app-screenshot.png" alt="Animated Circle Text" style="width:100%"/>
 
 ---
