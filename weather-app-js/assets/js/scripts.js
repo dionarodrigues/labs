@@ -7,8 +7,6 @@ const $imgIcon = document.querySelector('.icon img');
 const updateUI = (data) => {
   const { cityDetails, weather } = data;
 
-  console.log(weather);
-
   $details.innerHTML = `
     <h5 class="my-3">${cityDetails.EnglishName}</h5>
     <div class="my-3">${weather.WeatherText}</div>
@@ -29,7 +27,7 @@ const updateUI = (data) => {
   }
 }
 
-const updateCity = async (city) => {
+const updateData = async (city) => {
   const cityDetails = await getCity(city);
   const weather = await getWeather(cityDetails.Key);
 
@@ -39,14 +37,28 @@ const updateCity = async (city) => {
   }
 }
 
-const handleSubmit = function(e) {
+const updateCity = (city) => {
+  updateData(city).then(data => updateUI(data))
+  .catch(err => console.log(err));
+}
+
+const handleSubmit = (e) => {
   e.preventDefault();
 
   const city = $cityForm.city.value.trim();  
   $cityForm.reset();
 
-  updateCity(city).then(data => updateUI(data))
-  .catch(err => console.log(err));
+  updateCity(city);
+
+  localStorage.setItem('weather_city', city);  
 }
+
+window.addEventListener('load', function() {
+  const cityStorage = localStorage.getItem('weather_city');
+  if(cityStorage) {
+    updateCity(cityStorage);
+  }
+}, false)
+
 
 $cityForm.addEventListener('submit', handleSubmit);
