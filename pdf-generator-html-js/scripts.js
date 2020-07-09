@@ -8,8 +8,12 @@ function createPDF() {
   } else {
     const doc = new jsPDF();
 
-    doc.text($name.value, 10, 10);
-    doc.text($country.value, 10, 25);
+    doc.setFontSize(30);
+    doc.text($name.value, 20, 20);
+
+    doc.setFontSize(20);
+    doc.setTextColor('#00d1b2');
+    doc.text($country.value, 20, 35);
 
     doc.save("my-pdf.pdf");
   }

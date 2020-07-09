@@ -2,7 +2,7 @@
 
 [Demo on Codepen](https://codepen.io/diogorodrigues/pen/qBboqdq)
 
-<img src="_screenshot/weather-app-screenshot.png" alt="Animated Circle Text" style="width:100%"/>
+<img src="_screenshot/weather-app-screenshot.png" alt="Weather App Screenshot" style="width:100%"/>
 
 ---
 
