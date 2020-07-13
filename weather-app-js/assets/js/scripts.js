@@ -4,6 +4,8 @@ const $details = document.querySelector('.details');
 const $imgTime = document.querySelector('img.time');
 const $imgIcon = document.querySelector('.icon img');
 
+const forecast = new Forecast();
+
 const updateUI = (data) => {
   const { cityDetails, weather } = data;
 
@@ -27,18 +29,8 @@ const updateUI = (data) => {
   }
 }
 
-const updateData = async (city) => {
-  const cityDetails = await getCity(city);
-  const weather = await getWeather(cityDetails.Key);
-
-  return {
-    cityDetails,
-    weather
-  }
-}
-
 const updateCity = (city) => {
-  updateData(city).then(data => updateUI(data))
+  forecast.updateData(city).then(data => updateUI(data))
   .catch(err => console.log(err));
 }
 
