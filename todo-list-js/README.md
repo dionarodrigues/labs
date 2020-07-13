@@ -1,6 +1,6 @@
 # 🌞🌚🌈 Todo List with JavaScript
 
-[Demo on Codepen](https://codepen.io/diogorodrigues/pen/qBboqdq)
+[Demo on Codepen](https://codepen.io/diogorodrigues/pen/LYGmwZq)
 
 <img src="_screenshot/todo-list-screenshot.jpg" alt="Todo List Screenshot" style="width:100%"/>
 
