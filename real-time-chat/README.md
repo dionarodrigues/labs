@@ -17,3 +17,7 @@ This application an experiment that contains:
 - localStorage to storage the username and room name
 - more ES6 features! 
 👌
+
+---
+
+_The firebase credentials expire in 30 days, so you will probably need to set a new configuration based on your account to use it. All you need to do is add a new project on [firebase](https://firebase.google.com/), create a database and connect it to the script area in index.html._
