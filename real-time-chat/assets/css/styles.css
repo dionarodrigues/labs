@@ -1,0 +1,36 @@
+.container{
+  max-width: 600px;
+}
+
+.btn {
+  background: #7d43d9;
+  color: white;
+  outline: none;
+}
+
+.btn.active {
+  box-shadow: 0 0 10px #7d43d9;
+  background: #9b5bff;
+  color: #ffffff;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none;
+  background: #9b5bff;
+  color: #ffffff;
+}
+
+.chat-window .username {
+  font-weight: bold;
+}
+
+.chat-window .time {
+  font-size: 0.7em;
+  color: #999;
+}
+
+.update-mssg {
+  text-align: center;
+  margin: 20px auto;
+}
