@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_page_section_modules",
+  "collectionName": "components_page_section_faqs",
   "info": {
-    "name": "sectionModules",
-    "icon": "atlas"
+    "name": "sectionFaq",
+    "icon": "question-circle"
   },
   "options": {},
   "attributes": {
@@ -10,10 +10,10 @@
       "type": "string",
       "required": true
     },
-    "modules": {
+    "questions": {
       "type": "component",
       "repeatable": true,
-      "component": "page.modules",
+      "component": "page.questions",
       "required": true,
       "min": 2
     }

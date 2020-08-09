@@ -16,23 +16,6 @@
       "component": "page.reviews",
       "required": true,
       "min": 4
-    },
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "text": {
-      "type": "text",
-      "required": true
-    },
-    "photo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
     }
   }
 }

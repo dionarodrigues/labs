@@ -8,7 +8,7 @@
   "attributes": {
     "label": {
       "type": "string",
-      "default": "Buy now",
+      "default": "Comprar",
       "required": true,
       "maxLength": 20
     },

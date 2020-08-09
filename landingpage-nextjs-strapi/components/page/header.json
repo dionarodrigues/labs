@@ -19,7 +19,7 @@
       "repeatable": false,
       "component": "page.button"
     },
-    "media": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

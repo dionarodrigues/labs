@@ -8,7 +8,8 @@
   "attributes": {
     "totalPrice": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "default": 415
     },
     "numberInstallments": {
       "type": "integer",
@@ -20,7 +21,7 @@
     },
     "benefits": {
       "type": "richtext",
-      "default": "Create items as bullet list.",
+      "default": "Create items as bullet list",
       "required": true
     },
     "button": {
