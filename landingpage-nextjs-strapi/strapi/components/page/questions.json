@@ -2,12 +2,12 @@
   "collectionName": "components_page_questions",
   "info": {
     "name": "questions",
-    "icon": "question"
+    "icon": "question-circle"
   },
   "options": {},
   "attributes": {
     "question": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "answer": {
