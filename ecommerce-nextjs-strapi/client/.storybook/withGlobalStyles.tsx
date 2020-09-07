@@ -1,7 +1,7 @@
 import { StoryFn } from '@storybook/addons';
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '../src/styles/global';
-import theme from '../src/styles/theme'
+import theme from '../src/styles/theme';
 
 const withGlobalStyles = (storyFn: StoryFn) => (
   <ThemeProvider theme={theme}>
