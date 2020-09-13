@@ -1,4 +1,4 @@
-# Simple UI Library using webpack
+# A simple UI Library using webpack
 
 <img src="_screenshot/ui-library-screenshot.png" alt="UI Library Screenshot" style="width:100%"/>
 
