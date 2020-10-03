@@ -1,4 +1,9 @@
-import { createGlobalStyle, css } from 'styled-components'
+import {
+  createGlobalStyle,
+  css,
+  DefaultTheme,
+  GlobalStyleComponent
+} from 'styled-components'
 
 type GlobalStylesProps = {
   removeBg?: boolean
@@ -53,7 +58,7 @@ const GlobalStyles: GlobalStyleComponent<
       ${!removeBg &&
       css`
         background-color: ${theme.colors.mainBg};
-      `};
+      `}
     }
   `}
 `
