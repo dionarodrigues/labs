@@ -1,26 +1,21 @@
 {
-  "name": "NextJS Boilerplate",
-  "short_name": "NextJS Boilerplate",
+  "name": "React Avançado - Boilerplate",
+  "short_name": "React Avançado",
   "icons": [
     {
-      "src": "/img/icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
-      "src": "/img/icons/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "/img/icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "theme_color": "#16202c",
-  "background_color": "#16202c",
-  "start_url": "/",
+  "background_color": "#06092B",
+  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
   "display": "fullscreen",
-  "desription": "A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+  "start_url": "/",
+  "theme_color": "#06092B"
 }

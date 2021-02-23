@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@styled-icons/boxicons-solid": "^10.23.0",
     "next": "9.4.4",
     "next-pwa": "^3.0.3",
     "plop": "^2.7.4",
