@@ -42,7 +42,9 @@ export const MenuGroup = styled.div`
 
 export const MenuNav = styled.div`
   ${({ theme }) => css`
-    margin-left: ${theme.spacings.small};
+    ${media.greaterThan('medium')`
+			margin-left: ${theme.spacings.small};
+		`}
   `}
 `
 
@@ -87,7 +89,8 @@ export const MenuFull = styled.nav<MenuFullProps>`
     flex-direction: column;
     justify-content: space-between;
     background: ${theme.colors.white};
-    position: absolute;
+    position: fixed;
+    z-index: ${theme.layers.menu};
     top: 0;
     bottom: 0;
     left: 0;
@@ -106,7 +109,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
       width: 2.4rem;
       height: 2.4rem;
     }
-
     ${MenuNav} {
       display: flex;
       align-items: center;
@@ -114,7 +116,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
       flex: 1;
       flex-direction: column;
     }
-
     ${MenuLink} {
       color: ${theme.colors.black};
       font-weight: ${theme.font.bold};
@@ -123,7 +124,6 @@ export const MenuFull = styled.nav<MenuFullProps>`
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform 0.3s ease-in-out;
     }
-
     ${RegisterBox} {
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
       transition: transform 0.3s ease-in-out;
