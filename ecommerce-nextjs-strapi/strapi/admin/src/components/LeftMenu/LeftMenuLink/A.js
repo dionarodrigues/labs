@@ -12,19 +12,24 @@ const A = styled.a`
   text-decoration: none;
   display: block;
   -webkit-font-smoothing: antialiased;
+
   &:hover {
     color: ${(props) => props.theme.main.colors.white};
     background: ${(props) => props.theme.main.colors.won.blue};
+
     border-left: 0.3rem solid ${(props) => props.theme.main.colors.won.orange};
     text-decoration: none;
   }
+
   &:focus {
     color: ${(props) => props.theme.main.colors.white};
     text-decoration: none;
   }
+
   &:visited {
     color: ${(props) => props.theme.main.colors.leftMenu["link-color"]};
   }
+
   &.linkActive {
     color: white !important;
     border-left: 0.3rem solid ${(props) => props.theme.main.colors.won.orange};

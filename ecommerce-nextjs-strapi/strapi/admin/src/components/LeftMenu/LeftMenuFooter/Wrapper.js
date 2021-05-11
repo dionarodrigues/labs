@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     letter-spacing: 0.05rem;
     vertical-align: middle;
     color: ${({ theme }) => theme.main.colors.strapi["gray-light"]};
+
     a {
       color: ${({ theme }) => theme.main.colors.won.orange};
     }

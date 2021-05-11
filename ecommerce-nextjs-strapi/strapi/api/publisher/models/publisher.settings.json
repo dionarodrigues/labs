@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "publishers",
   "info": {
-    "name": "Publisher"
+    "name": "publisher"
   },
   "options": {
     "increments": true,

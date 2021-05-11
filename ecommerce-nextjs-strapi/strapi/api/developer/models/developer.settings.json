@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "developers",
   "info": {
-    "name": "Developer"
+    "name": "developer"
   },
   "options": {
     "increments": true,

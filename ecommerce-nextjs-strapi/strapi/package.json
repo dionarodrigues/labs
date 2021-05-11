@@ -1,5 +1,5 @@
 {
-  "name": "strapi",
+  "name": "api",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,29 +11,31 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^22.0.0",
-    "@ckeditor/ckeditor5-react": "^2.1.0",
-    "jsdom": "^16.4.0",
+    "jsdom": "^16.3.0",
     "knex": "<0.20.0",
     "pg": "latest",
     "slugify": "^1.4.5",
-    "strapi": "3.1.4",
-    "strapi-admin": "3.1.4",
-    "strapi-connector-bookshelf": "3.1.4",
-    "strapi-plugin-content-manager": "3.1.4",
-    "strapi-plugin-content-type-builder": "3.1.4",
-    "strapi-plugin-email": "3.1.4",
-    "strapi-plugin-entity-relationship-chart": "^3.1.0",
-    "strapi-plugin-graphql": "3.1.4",
-    "strapi-plugin-upload": "3.1.4",
-    "strapi-plugin-users-permissions": "3.1.4",
-    "strapi-utils": "3.1.4"
+    "strapi": "3.4.4",
+    "strapi-admin": "3.4.4",
+    "strapi-connector-bookshelf": "3.4.4",
+    "strapi-plugin-ckeditor5": "^0.1.4",
+    "strapi-plugin-content-manager": "3.4.4",
+    "strapi-plugin-content-type-builder": "3.4.4",
+    "strapi-plugin-email": "3.4.4",
+    "strapi-plugin-email-designer": "^0.3.0",
+    "strapi-plugin-entity-relationship-chart": "3.1.0",
+    "strapi-plugin-graphql": "3.4.4",
+    "strapi-plugin-upload": "3.4.4",
+    "strapi-plugin-users-permissions": "3.4.4",
+    "strapi-provider-email-nodemailer": "^3.5.3",
+    "strapi-utils": "3.4.4",
+    "stripe": "^8.143.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "244a9494-60b1-4fba-9603-a464ad60b4b1"
+    "uuid": "d5828e28-e5df-4086-a82a-0d6c415cd518"
   },
   "engines": {
     "node": ">=10.0.0",

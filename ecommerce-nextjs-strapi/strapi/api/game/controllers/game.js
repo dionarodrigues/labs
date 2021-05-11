@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
@@ -7,7 +7,7 @@
 
 module.exports = {
   populate: async (ctx) => {
-    console.log('Starting populating...');
+    console.log("Starting to populate...");
 
     const options = {
       sort: "popularity",
@@ -17,6 +17,6 @@ module.exports = {
 
     await strapi.services.game.populate(options);
 
-    ctx.send('Finished populating')
-  }
+    ctx.send("Finished populating!");
+  },
 };
