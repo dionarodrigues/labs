@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image to text converter</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-indigo-100 grid content-center flex-1 p-5 min-h-screen">
+		<div class="container max-w-2xl mx-auto bg-white p-10 rounded-md shadow-sm">
+			<h1
+				class="font-medium leading-tight text-4xl mt-4 mb-2 text-blue-600 text-center"
+			>
+				Image to text converter
+			</h1>
+			<p class="mb-10">
+				Convert a new image by uploading a new one containing readable English
+				text.
+			</p>
+
+			<hr class="border-slate-200 border-2 mt-5 mb-5" />
+
+			<div class="sm:grid grid-cols-2 gap-4">
+				<img
+					src="https://tesseract.projectnaptha.com/img/eng_bw.png"
+					alt=""
+					class="image m-2 sm:m-0"
+					width="250"
+				/>
+
+				<form class="form">
+					<input
+						type="file"
+						name="image"
+						accept="image/*"
+						class="form-control block w-full px-3 py-1.5 text-base text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+					/>
+					<input
+						type="submit"
+						value="Upload Image"
+						class="inline-block cursor-pointer px-6 py-2.5 mt-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+					/>
+				</form>
+			</div>
+
+			<hr class="border-slate-200 border-2 mt-5 mb-10" />
+
+			<div class="grid grid-cols-2 gap-4">
+				<div>
+					<button
+						type="button"
+						class="btn-convert inline-block cursor-pointer px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+					>
+						Convert image to text
+					</button>
+
+					<span class="progress text-gray-400 ml-2 hidden"></span>
+				</div>
+
+				<div class="text-right">
+					<button
+						type="button"
+						class="btn-read inline-block rounded-full bg-transparent animate-pulse hidden"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="28"
+							viewBox="0 0 48 48"
+							width="28"
+						>
+							<path
+								d="M33 24c0-3.53-2.04-6.58-5-8.05v4.42l4.91 4.91c.06-.42.09-.85.09-1.28zm5 0c0 1.88-.41 3.65-1.08 5.28l3.03 3.03C41.25 29.82 42 27 42 24c0-8.56-5.99-15.72-14-17.54v4.13c5.78 1.72 10 7.07 10 13.41zM8.55 6L6 8.55 15.45 18H6v12h8l10 10V26.55l8.51 8.51c-1.34 1.03-2.85 1.86-4.51 2.36v4.13c2.75-.63 5.26-1.89 7.37-3.62L39.45 42 42 39.45l-18-18L8.55 6zM24 8l-4.18 4.18L24 16.36V8z"
+							/>
+							<path d="M0 0h48v48H0z" fill="none" />
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="content">
+				<p class="text p-10 italic"></p>
+			</div>
+		</div>
+		<script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
+		<script src="./assets/js/scripts.js"></script>
+	</body>
+</html>
