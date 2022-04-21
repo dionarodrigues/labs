@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Project Manager</title>
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script type="module" src="bundle.js"></script>
+	</head>
+	<body>
+		<template id="project-input">
+			<form class="m-6 sm:m-10 max-w-lg">
+				<div class="sm:grid grid-cols-2 gap-4">
+					<div class="relative z-0 mb-6 w-full group">
+						<input
+							type="text"
+							id="title"
+							name="floating_title"
+							class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							placeholder=" "
+							required
+						/>
+						<label
+							for="floating_title"
+							class="absolute text-md text-gray-900 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							>Title</label
+						>
+					</div>
+
+					<div class="relative z-0 mb-6 w-full group">
+						<input
+							type="number"
+							id="people"
+							step="1"
+							min="0"
+							max="10"
+							name="floating_title"
+							class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+							placeholder=" "
+							required
+						/>
+						<label
+							for="floating_people"
+							class="absolute text-md text-gray-900 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+							>People</label
+						>
+					</div>
+				</div>
+
+				<div class="relative z-0 mb-6 w-full group">
+					<textarea
+						id="description"
+						name="floating_description"
+						class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+						placeholder=" "
+						rows="3"
+						required
+					></textarea>
+					<label
+						for="floating_floating_description"
+						class="absolute text-md text-gray-900 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+						>Description</label
+					>
+				</div>
+
+				<button
+					type="submit"
+					class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none uppercase font-semibold"
+				>
+					Add project
+				</button>
+			</form>
+		</template>
+		<template id="single-project">
+			<li
+				class="p-4 bg-white rounded border bg-gray-700 border-gray-600 text-white m-2"
+			>
+				<h2 class="text-xl font-semibold mb-1"></h2>
+				<h3 class="font-semibold mb-2"></h3>
+				<p></p>
+			</li>
+		</template>
+		<template id="project-list">
+			<section
+				class="p-5 rounded-md border-4 shadow-md m-6 sm:p-8 sm:m-10 projects"
+			>
+				<header>
+					<h2
+						class="mb-4 text-xl font-medium uppercase font-semibold text-black"
+					></h2>
+				</header>
+				<ul></ul>
+			</section>
+		</template>
+		<div id="app"></div>
+	</body>
+</html>
