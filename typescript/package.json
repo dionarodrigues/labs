@@ -7,8 +7,9 @@
 		"start": "webpack --watch",
 		"serve": "webpack serve --hot",
 		"css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-		"dev": "npm run start & npm run serve",
-		"build": "webpack"
+		"css:watch": "npm run css --watch",
+		"dev": "npm run start & npm run css:watch & npm run serve",
+		"build": "npm run css & webpack"
 	},
 	"author": "",
 	"license": "ISC",

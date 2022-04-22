@@ -9,6 +9,15 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [Drag and Drop HTML API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Webpack](https://webpack.js.org/)
+
+## Commands
+
+- `dev`: runs your application on `localhost:3000`
+- `build`: creates the production build version
+- `server`: starts a simple server with the build production code
+- `css`: generates all CSS code
+- `test`: runs jest to test all components and pages
 
 ---
 
