@@ -22,7 +22,7 @@ module.exports = {
 		extensions: ['.ts', '.js'],
 	},
 	devServer: {
-		static: path.resolve(__dirname, './dist'),
+		static: path.resolve(__dirname, './'),
 		port: 3000,
 		hot: true,
 	},
