@@ -31,9 +31,7 @@ export class ProjectItem
 	}
 
 	@autobind
-	dragEndHandler(_: DragEvent): void {
-		console.log('end');
-	}
+	dragEndHandler(_: DragEvent): void {}
 
 	configure() {
 		this.element.addEventListener('dragstart', this.dragStartHandler);

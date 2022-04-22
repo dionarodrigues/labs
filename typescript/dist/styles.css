@@ -892,6 +892,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
 .touch-auto {
   touch-action: auto;
 }
