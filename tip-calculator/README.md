@@ -1,4 +1,4 @@
-# 🌞🌚🌈 Tip Calculator with Vanilla JavaScript
+# Tip Calculator with Vanilla JavaScript
 
 [Demo on Codepen](https://codepen.io/diogorodrigues/pen/LYGmwZq)
 
