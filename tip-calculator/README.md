@@ -1,6 +1,6 @@
 # Tip Calculator with Vanilla JavaScript
 
-[Demo on Codepen](https://codepen.io/diogorodrigues/pen/LYGmwZq)
+[Demo on Codepen](https://codepen.io/diogorodrigues/pen/mdLjQVd)
 
 <img src="_screenshot/tip-calculator.jpg" alt="Tip Calculator Screenshot" style="width:100%"/>
 
