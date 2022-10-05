@@ -20,10 +20,8 @@ const calculateBill = () => {
 	const billTotal = Number($billTotalInput.value);
 	const tipTotal = Number($tipTotalInput.value);
 
-	if (billTotal && tipTotal && peopleTotal) {
-		const total = handleTotalPerPerson(tipTotal, billTotal, peopleTotal);
-		updateResultUI(total.toFixed(2));
-	}
+	const total = handleTotalPerPerson(tipTotal, billTotal, peopleTotal);
+	updateResultUI(total.toFixed(2));
 };
 
 const increasePeople = () => {
