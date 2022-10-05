@@ -11,7 +11,11 @@ const $peopleIncreaseBtn = document.querySelector('.peopleIncreaseBtn');
 let peopleTotal = Number($numberOfPeopleEl.textContent);
 
 const handleTotalPerPerson = (tipTotal, billTotal, peopleTotal) => {
-	return ((100 * tipTotal) / billTotal + billTotal) / peopleTotal;
+	const tipPercentage = Number(tipTotal) / 100;
+	const tipAmount = Number(billTotal) * tipPercentage;
+	const total = (tipAmount + billTotal) / peopleTotal;
+
+	return total;
 };
 
 const updateResultUI = result => ($result.innerHTML = result);
