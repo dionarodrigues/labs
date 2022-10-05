@@ -2,11 +2,11 @@
 
 const $billTotalInput = document.querySelector('[name="bill"]');
 const $tipTotalInput = document.querySelector('[name="tip"]');
-const $numberOfPeopleEl = document.querySelector('.peopleTotal');
+const $numberOfPeopleEl = document.querySelector('.people-total');
 const $result = document.querySelector('.result');
 
-const $peopleDecreaseBtn = document.querySelector('.peopleDecreaseBtn');
-const $peopleIncreaseBtn = document.querySelector('.peopleIncreaseBtn');
+const $peopleDecreaseBtn = document.querySelector('.people-decremental-btn');
+const $peopleIncreaseBtn = document.querySelector('.people-incremental-btn');
 
 let peopleTotal = Number($numberOfPeopleEl.textContent);
 
