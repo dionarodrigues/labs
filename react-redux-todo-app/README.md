@@ -13,4 +13,22 @@ There are two directories in this project:
 
 ---
 
-👌
+## 🚀 Getting Started
+
+Assuming [Node.js](https://nodejs.org/en/) is installed, run the following commands to install the project:
+
+### app:
+
+```
+cd app
+yarn install
+yarn start
+```
+
+### api:
+
+```
+cd api
+yarn install
+yarn server
+```
