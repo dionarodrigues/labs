@@ -1,6 +1,6 @@
 # Simple example on how to use Plop to generate components and pages in React projects
 
-Plop is a great node dependency to use alongside your project to automatically generate files with some initial code injected into them. It also helps maintain code consistency by defining which files will be created and where they should be placed.
+[Plop](https://plopjs.com/) is a great node dependency to use alongside your project to automatically generate files with some initial code injected into them. It also helps maintain code consistency by defining which files will be created and where they should be placed.
 
 This repository contains a simple example of how to generate components and pages using Plop.
 
