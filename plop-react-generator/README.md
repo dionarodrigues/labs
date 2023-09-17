@@ -1,4 +1,4 @@
-# Simple example on how to use Plop to generate components and pages in React projectds
+# Simple example on how to use Plop to generate components and pages in React projects
 
 Plop is a great node dependency to use alongside your project to automatically generate files with some initial code injected into them. It also helps maintain code consistency by defining which files will be created and where they should be placed.
 
@@ -12,4 +12,4 @@ Steps to test it:
 4- Enter the name of it
 5- Check the generated files in `./src/components` or `./src/pages` depending on what you choose in step 2
 
-Check this article I created to better understand Plop and the examples in this repo.
+Check [this article I created to better understand Plop](https://dionarodrigues.dev/blog/generating-react-files-with-plop-to-maintain-code-consistency-and-avoid-trivial-steps) and the examples in this repo.
