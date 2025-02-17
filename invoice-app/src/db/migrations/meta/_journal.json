@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1736450901353,
+      "tag": "0000_material_morlun",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1736532750896,
+      "tag": "0001_naive_orphan",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1736532813108,
+      "tag": "0002_green_karen_page",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1737398483509,
+      "tag": "0003_windy_typhoid_mary",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1738346352646,
+      "tag": "0004_amused_monster_badoon",
+      "breakpoints": true
+    }
+  ]
+}
