@@ -1,0 +1,20 @@
+{
+  "name": "canvas",
+  "version": "1.0.0",
+  "main": "sketch-skew.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "canvas-sketch": "^0.7.7",
+    "canvas-sketch-util": "^1.10.0",
+    "color-interpolate": "^1.0.5",
+    "colormap": "^2.3.2",
+    "eases": "^1.0.8",
+    "riso-colors": "^1.0.1"
+  }
+}
