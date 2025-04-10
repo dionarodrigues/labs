@@ -1,0 +1,89 @@
+{
+	"airlines/europe": [
+		{
+			"id": 101,
+			"name": "Air France",
+			"foundation": 1933,
+			"country": {
+				"id": 201,
+				"name": "France"
+			}
+		},
+		{
+			"id": 102,
+			"name": "Ryanair",
+			"foundation": 1984,
+			"country": {
+				"id": 202,
+				"name": "Ireland"
+			}
+		},
+		{
+			"id": 103,
+			"name": "British Airways",
+			"foundation": 1974,
+			"country": {
+				"id": 203,
+				"name": "United Kingdom"
+			}
+		},
+		{
+			"id": 104,
+			"name": "TAP Portugal",
+			"foundation": 1945,
+			"country": {
+				"id": 204,
+				"name": "Portugal"
+			}
+		}
+	],
+	"airlines/america": [
+		{
+			"id": 105,
+			"name": "Gol",
+			"foundation": 2001,
+			"country": {
+				"id": 205,
+				"name": "Brazil"
+			}
+		},
+		{
+			"id": 106,
+			"name": "Air Canada",
+			"foundation": 1937,
+			"country": {
+				"id": 206,
+				"name": "Canada"
+			}
+		},
+		{
+			"id": 107,
+			"name": "Delta",
+			"foundation": 1924,
+			"country": {
+				"id": 207,
+				"name": "United States"
+			}
+		}
+	],
+	"airlines/asia": [
+		{
+			"id": 108,
+			"name": "Air China",
+			"foundation": 1988,
+			"country": {
+				"id": 208,
+				"name": "China"
+			}
+		},
+		{
+			"id": 109,
+			"name": "Jeju Air",
+			"foundation": 2005,
+			"country": {
+				"id": 209,
+				"name": "South Korea"
+			}
+		}
+	]
+}
