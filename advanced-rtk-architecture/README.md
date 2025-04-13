@@ -4,7 +4,7 @@ This project uses React + Vite + Redux Toolkit + Node Express among other depend
 
 Read more about this project in this article called [Redux Toolkit Advanced: Scaling Redux Toolkit for Large Applications](https://dionarodrigues.dev/blog/redux-toolkit-advanced-scaling-for-large-applications).
 
-<img src="_screenshot/redux-toolkit-advanced-scaling-for-large-applications-project.jpg" alt="Airlines List Screenshot" style="width:100%"/>
+<img src="_screenshot/redux-toolkit-advanced-scaling-for-large-applications-project.png" alt="Airlines List Screenshot" style="width:100%"/>
 
 ## 🚀 Getting Started
 
