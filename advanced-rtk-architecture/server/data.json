@@ -1,5 +1,5 @@
 {
-	"airlines/europe": [
+	"europe": [
 		{
 			"id": 101,
 			"name": "Air France",
@@ -37,7 +37,7 @@
 			}
 		}
 	],
-	"airlines/america": [
+	"america": [
 		{
 			"id": 105,
 			"name": "Gol",
@@ -66,7 +66,7 @@
 			}
 		}
 	],
-	"airlines/asia": [
+	"asia": [
 		{
 			"id": 108,
 			"name": "Air China",

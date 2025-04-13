@@ -9,7 +9,7 @@ const navLinks = [
 export default function Header() {
 	return (
 		<header className="text-white py-10 px-20">
-			<h1 className="text-5xl font-semibold">World Airports</h1>
+			<h1 className="text-5xl font-semibold">World Airlines</h1>
 			<nav className="mt-5">
 				<ul className="flex space-x-4">
 					{navLinks.map(({path, label}) => (

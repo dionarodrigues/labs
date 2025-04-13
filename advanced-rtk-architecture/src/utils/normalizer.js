@@ -1,50 +1,40 @@
-export function normalizeData(data, group) {
-	const airlines = {};
-	const countries = {};
-	const airports = {};
+export function normalizeData(data, region) {
+	const airlines = {}; // Will store normalized airline data using airline ID as key
+	const countries = {}; // Will store normalized country data using country ID as key
+
+	// Initialize a pointer object grouped by region
 	const pointers = {
-		id: group,
-		mapping: [], // Initialize the mapping array for this group
+		id: region, // Region acts as the unique ID for this pointers entry
+		mapping: [], // Will hold relationships between airlines and countries
 	};
 
 	data.forEach(airline => {
-		// Normalize airline data
+		// Normalize and store airline data
 		airlines[airline.id] = {
 			id: airline.id,
 			name: airline.name,
-			slug: airline.slug,
 			foundation: airline.foundation,
 		};
 
-		// Normalize country data if not already present
+		// Only add country if it hasn't already been added
 		if (!countries[airline.country.id]) {
 			countries[airline.country.id] = {
 				id: airline.country.id,
 				name: airline.country.name,
-				slug: airline.country.slug,
 			};
 		}
 
-		// Normalize airport data if not already present
-		if (!airports[airline.airport.id]) {
-			airports[airline.airport.id] = {
-				id: airline.airport.id,
-				name: airline.airport.name,
-				slug: airline.airport.slug,
-			};
-		}
-
-		// Add pointers for the 'europe' group
+		// Create the pointer relation between airline and country
 		pointers.mapping.push({
 			airline_id: airline.id,
 			country_id: airline.country.id,
 		});
 	});
 
+	// Return a normalized structure ready for the Redux store
 	return {
 		airlines,
 		countries,
-		airports,
 		pointers,
 	};
 }

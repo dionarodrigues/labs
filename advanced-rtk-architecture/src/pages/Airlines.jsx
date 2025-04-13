@@ -10,24 +10,29 @@ import {normalizeData} from '@utils/normalizer';
 
 import AirlineCard from '@components/AirlineCard';
 
-export default function Airports() {
+export default function Airlines() {
 	const dispatch = useDispatch();
-	const {region} = useParams();
+	const {region} = useParams(); // Get the region from the URL
 
 	const pointersId = region;
-	const pointers = usePointersByAlphabeticalOrder(pointersId);
+	const pointers = usePointersByAlphabeticalOrder(pointersId); // Get pointers sorted alphabetically
 
 	useEffect(() => {
+		// Fetch airlines data based on the region
 		fetch(`http://localhost:5002/airlines/${region}`)
 			.then(res => res.json())
 			.then(data => {
+				// Normalize the response to fit our Redux structure
 				const normalizedData = normalizeData(data, pointersId);
+				// Dispatch the normalized data to update the store
 				dispatch(updateEntities(normalizedData));
 			});
 
+		// Cleanup when the component unmounts
 		return () => dispatch(cleanUpEntities());
 	}, [dispatch, region, pointersId]);
 
+	// If no pointers found, don't render anything
 	if (!pointers?.length) {
 		return null;
 	}
@@ -39,20 +44,17 @@ export default function Airports() {
 				<span>{region}</span>
 			</h1>
 
+			{/* Render an AirlineCard for each pointer mapping */}
 			{pointers.map(pointersMap => {
-				const {
-					airline_id: airlineId,
-					airport_id: airportId,
-					country_id: countryId,
-				} = pointersMap;
+				const {airline_id: airlineId, country_id: countryId} = pointersMap;
 
-				const componentKey = `${airlineId}/${airportId}/${countryId}`;
+				// Unique key based on related entities
+				const componentKey = `${airlineId}/${countryId}`;
 
 				return (
 					<AirlineCard
 						key={componentKey}
 						airlineId={airlineId}
-						airportId={airportId}
 						countryId={countryId}
 					/>
 				);
